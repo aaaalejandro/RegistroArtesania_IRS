@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.4.33213.308
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RegistroArtesania_IRS", "RegistroArtesania_IRS\RegistroArtesania_IRS.csproj", "{945F1782-853C-4340-B3C2-9CF9DF333FA1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "objRegistrarArtesania", "objRegistrarArtesania\objRegistrarArtesania.csproj", "{E68233BE-B2C1-4872-B543-6FA9B599A120}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{945F1782-853C-4340-B3C2-9CF9DF333FA1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{945F1782-853C-4340-B3C2-9CF9DF333FA1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{945F1782-853C-4340-B3C2-9CF9DF333FA1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{945F1782-853C-4340-B3C2-9CF9DF333FA1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E68233BE-B2C1-4872-B543-6FA9B599A120}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E68233BE-B2C1-4872-B543-6FA9B599A120}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E68233BE-B2C1-4872-B543-6FA9B599A120}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E68233BE-B2C1-4872-B543-6FA9B599A120}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {B828A96E-BF0E-4C72-8674-394AA2565D28}
+	EndGlobalSection
+EndGlobal
