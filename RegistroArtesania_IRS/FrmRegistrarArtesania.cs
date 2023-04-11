@@ -78,6 +78,7 @@ namespace RegistroArtesania_IRS
             Art.Precio = txtPVentaA.Text;
             Art.Cantidad = txtCantidadA.Text;
             Art.CodigoEmp = txtCodE.Text;
+
             if (cboEmpleados.SelectedItem != null)
                 Art.NombreEmp = cboEmpleados.SelectedItem.ToString();
             
@@ -86,15 +87,7 @@ namespace RegistroArtesania_IRS
                 dgvArtesanias.DataSource = Art.ListaArtesania(Con);
             }
 
-            Con.Close();
-            cboEmpleados.Items.Clear();
-            AgregarEmpleados();
-            txtNombreA.Text = ""; txtCodA.Text = ""; txtDescripA.Text = "";
-            txtPVentaA.Text = ""; txtCantidadA.Text = ""; txtCodE.Text = ""; 
-            cboEstado.Items.Clear();
-            cboEstado.Items.Add("Normal");
-            cboEstado.Items.Add("Mermado");
-            txtNombreA.Focus();
+            Limpiar();
         }
 
         private void btnCancelarR_Click(object sender, EventArgs e)
@@ -141,6 +134,19 @@ namespace RegistroArtesania_IRS
             } else if (cboEmpleados.SelectedIndex == -1) {
                 MessageBox.Show("No has seleccionado el nombre del empleado");
             } 
+        }
+
+        private void Limpiar()
+        {
+            Con.Close();
+            cboEmpleados.Items.Clear();
+            AgregarEmpleados();
+            txtNombreA.Text = ""; txtCodA.Text = ""; txtDescripA.Text = "";
+            txtPVentaA.Text = ""; txtCantidadA.Text = ""; txtCodE.Text = "";
+            cboEstado.Items.Clear();
+            cboEstado.Items.Add("Normal");
+            cboEstado.Items.Add("Mermado");
+            txtNombreA.Focus();
         }
 
         private void txtPVentaA_KeyPress(object sender, KeyPressEventArgs e)
