@@ -30,7 +30,6 @@ Insert Into Empleado(CodEmp, nombreEmp) Values ('E001', 'Matias Criollo');
 Insert Into Empleado(CodEmp, nombreEmp) Values ('E002', 'Kevin Barrutia');
 Insert Into Empleado(CodEmp, nombreEmp) Values ('E003', 'Roger Avalos');
 Insert Into Empleado(CodEmp, nombreEmp) Values ('E004', 'Alejandro Diaz');
-Insert Into Empleado(CodEmp, nombreEmp) Values ('E005', 'Mauricio Yataco');
 
 -- Crear Procedures
 go

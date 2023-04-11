@@ -1,0 +1,6 @@
+E:\Clases Idat\Tercer CIclo\Ingeniería de Requerimiento de Software\Sofware-Registrar_Artesania\RegistroArtesania_IRS\objRegistrarArtesania\bin\Debug\objRegistrarArtesania.dll
+E:\Clases Idat\Tercer CIclo\Ingeniería de Requerimiento de Software\Sofware-Registrar_Artesania\RegistroArtesania_IRS\objRegistrarArtesania\bin\Debug\objRegistrarArtesania.pdb
+E:\Clases Idat\Tercer CIclo\Ingeniería de Requerimiento de Software\Sofware-Registrar_Artesania\RegistroArtesania_IRS\objRegistrarArtesania\obj\Debug\objRegistrarArtesania.csproj.AssemblyReference.cache
+E:\Clases Idat\Tercer CIclo\Ingeniería de Requerimiento de Software\Sofware-Registrar_Artesania\RegistroArtesania_IRS\objRegistrarArtesania\obj\Debug\objRegistrarArtesania.csproj.CoreCompileInputs.cache
+E:\Clases Idat\Tercer CIclo\Ingeniería de Requerimiento de Software\Sofware-Registrar_Artesania\RegistroArtesania_IRS\objRegistrarArtesania\obj\Debug\objRegistrarArtesania.dll
+E:\Clases Idat\Tercer CIclo\Ingeniería de Requerimiento de Software\Sofware-Registrar_Artesania\RegistroArtesania_IRS\objRegistrarArtesania\obj\Debug\objRegistrarArtesania.pdb
