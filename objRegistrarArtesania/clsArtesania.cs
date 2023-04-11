@@ -1,11 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Data.SqlClient;
 using System.Data;
-using System.Linq;
-using System.Security.Cryptography;
-using System.Text;
-using System.Threading.Tasks;
+using System.Data.SqlClient;
 
 namespace objRegistrarArtesania
 {
@@ -17,67 +12,88 @@ namespace objRegistrarArtesania
         private String _estadoArt;
         private DateTime _fechRegis;
         private String _descripArt;
-        private double _precioArt;
-        private int _cantidadArt;
+        private String _precioArt;
+        private String _cantidadArt;
         private String _estadoPuro;
         private String _codEmp;
         private String _nombreEmp;
         private DataSet dst = new DataSet();
 
         // Propiedades
-        public String Codigo { 
-            get {
+        public String Codigo
+        {
+            get
+            {
                 return _codArt;
             }
-            set {
+            set
+            {
                 _codArt = value;
             }
         }
-        public String Nombre { 
-            get {
+        public String Nombre
+        {
+            get
+            {
                 return _nombreArt;
             }
-            set {
+            set
+            {
                 _nombreArt = value;
             }
         }
-        public String Estado { 
-            get {
+        public String Estado
+        {
+            get
+            {
                 return _estadoArt;
             }
-            set {
+            set
+            {
                 _estadoArt = value;
             }
         }
-        public DateTime FechaRegistro { 
-            get {
+        public DateTime FechaRegistro
+        {
+            get
+            {
                 return _fechRegis;
             }
-            set {
+            set
+            {
                 _fechRegis = value;
             }
         }
-        public String Descripcion { 
-            get {
+        public String Descripcion
+        {
+            get
+            {
                 return _descripArt;
             }
-            set {
+            set
+            {
                 _descripArt = value;
             }
         }
-        public double Precio { 
-            get {
+        public String Precio
+        {
+            get
+            {
                 return _precioArt;
             }
-            set {
+            set
+            {
                 _precioArt = value;
             }
         }
-        public int Cantidad { 
-            get {
+        public String Cantidad
+        {
+            get
+            {
                 return _cantidadArt;
             }
-            set {
+            set
+            {
                 _cantidadArt = value;
             }
         }
@@ -142,16 +158,19 @@ namespace objRegistrarArtesania
             dap.SelectCommand.Parameters.Add("@codArt", SqlDbType.Char, 4);
             dap.SelectCommand.Parameters["@codArt"].Direction = ParameterDirection.Output;
 
-            if (CadenaSQL.State == ConnectionState.Closed) {
+            if (CadenaSQL.State == ConnectionState.Closed)
+            {
                 CadenaSQL.Open();
             }
-            try { 
-                dap.SelectCommand.ExecuteNonQuery();
+            try
+            {
+                dap.SelectCommand.ExecuteNonQuery();
                 _codArt = dap.SelectCommand.Parameters["@codArt"].Value.ToString();
                 return "1";
             }
-            catch { 
-                return "0";
+            catch
+            {
+                return "0";
             }
         }
         public String EliminaArtesania(SqlConnection CadenaSQL)
@@ -164,12 +183,14 @@ namespace objRegistrarArtesania
             {
                 CadenaSQL.Open();
             }
-            try { 
-                dap.SelectCommand.ExecuteNonQuery();
+            try
+            {
+                dap.SelectCommand.ExecuteNonQuery();
                 return "1";
             }
-            catch { 
-                return "0";
+            catch
+            {
+                return "0";
             }
         }
     }

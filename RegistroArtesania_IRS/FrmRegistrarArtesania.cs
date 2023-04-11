@@ -8,7 +8,6 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
 namespace RegistroArtesania_IRS
 {
@@ -68,23 +67,33 @@ namespace RegistroArtesania_IRS
 
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
+            validaciones();
             Art.Nombre = txtNombreA.Text;
-            Art.Estado = cboEstado.SelectedItem.ToString();
             Art.FechaRegistro = dtpA.Value;
             Art.Descripcion = txtDescripA.Text;
-            Art.Precio = Convert.ToDouble(txtPVentaA.Text);
-            Art.Cantidad = Convert.ToInt32(txtCantidadA.Text);
+            if (cboEstado.SelectedItem != null)
+                Art.Estado = cboEstado.SelectedItem.ToString();
+            Art.FechaRegistro = dtpA.Value;
+            Art.Descripcion = txtDescripA.Text;
+            Art.Precio = txtPVentaA.Text;
+            Art.Cantidad = txtCantidadA.Text;
             Art.CodigoEmp = txtCodE.Text;
-            Art.NombreEmp = cboEmpleados.SelectedItem.ToString(); 
-
+            if (cboEmpleados.SelectedItem != null)
+                Art.NombreEmp = cboEmpleados.SelectedItem.ToString();
+            
             if (Art.IngresaArtesamoa(Con) != "0") {
                 txtCodA.Text = Art.Codigo;
                 dgvArtesanias.DataSource = Art.ListaArtesania(Con);
             }
 
-            txtNombreA.Text = ""; txtCodA.Text = ""; cboEstado.Text = ""; txtDescripA.Text = "";
-            txtPVentaA.Text = ""; txtCantidadA.Text = ""; txtCodE.Text = "";
-
+            Con.Close();
+            cboEmpleados.Items.Clear();
+            AgregarEmpleados();
+            txtNombreA.Text = ""; txtCodA.Text = ""; txtDescripA.Text = "";
+            txtPVentaA.Text = ""; txtCantidadA.Text = ""; txtCodE.Text = ""; 
+            cboEstado.Items.Clear();
+            cboEstado.Items.Add("Normal");
+            cboEstado.Items.Add("Mermado");
             txtNombreA.Focus();
         }
 
@@ -97,8 +106,8 @@ namespace RegistroArtesania_IRS
         {
             int fila = dgvArtesanias.CurrentCell.RowIndex;
 
-            txtNombreA.Text = dgvArtesanias.Rows[fila].Cells[0].Value.ToString();
-            txtCodA.Text = dgvArtesanias.Rows[fila].Cells[1].Value.ToString();
+            txtCodA.Text = dgvArtesanias.Rows[fila].Cells[0].Value.ToString();
+            txtNombreA.Text = dgvArtesanias.Rows[fila].Cells[1].Value.ToString();
             cboEstado.Text = dgvArtesanias.Rows[fila].Cells[2].Value.ToString();
             dtpA.Text = dgvArtesanias.Rows[fila].Cells[3].Value.ToString();
             txtDescripA.Text = dgvArtesanias.Rows[fila].Cells[4].Value.ToString();
@@ -114,6 +123,37 @@ namespace RegistroArtesania_IRS
 
             if (Art.EliminaArtesania(Con) != "0") {
                 dgvArtesanias.DataSource = Art.ListaArtesania(Con);
+            }
+        }
+        // Validadciones
+        private void validaciones()
+        {
+            if (String.IsNullOrEmpty(txtNombreA.Text)) {
+                MessageBox.Show("No has ingresado el nombre, vuelve a ingresar");
+            } else if (String.IsNullOrEmpty(txtDescripA.Text)) {
+                MessageBox.Show("No has ingresado la descripcion, vuelve a ingresar");
+            } else if (String.IsNullOrEmpty(txtPVentaA.Text)) {
+                MessageBox.Show("No has ingresado el precio de venta, vuelve a ingresar");
+            } else if (String.IsNullOrEmpty(txtCantidadA.Text)) {
+                MessageBox.Show("No has ingresado la cantidad, vuelve a ingresar");
+            } else if (cboEstado.SelectedIndex == -1) {
+                MessageBox.Show("No has seleccionado el estado");
+            } else if (cboEmpleados.SelectedIndex == -1) {
+                MessageBox.Show("No has seleccionado el nombre del empleado");
+            } 
+        }
+
+        private void txtPVentaA_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar)) {
+                e.Handled = true;
+            }
+        }
+
+        private void txtCantidadA_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar)) {
+                e.Handled = true;
             }
         }
     }

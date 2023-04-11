@@ -28,9 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -53,22 +54,22 @@
             this.label13 = new System.Windows.Forms.Label();
             this.txtBuscarA = new System.Windows.Forms.TextBox();
             this.dgvArtesanias = new System.Windows.Forms.DataGridView();
-            this.colNombreA = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colCodA = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colEstadoA = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colFechRegisA = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ColDescripA = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colPVentaA = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colCantidad = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colCodEmp = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colNombreE = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.colEstadoPuro = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.btnRegistrar = new System.Windows.Forms.Button();
             this.btnCancelarR = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
             this.cboEmpleados = new System.Windows.Forms.ComboBox();
             this.button1 = new System.Windows.Forms.Button();
             this.cboEstado = new System.Windows.Forms.ComboBox();
+            this.colCodArt = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colNombreArt = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colEstadoArt = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colFechRegArt = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colDescripArt = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colPVentaArt = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colCantArt = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colEstadoP = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colCodEmp = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.colNombreEmp = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.dgvArtesanias)).BeginInit();
             this.SuspendLayout();
             // 
@@ -142,7 +143,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Arial", 11.5F);
-            this.label7.Location = new System.Drawing.Point(532, 93);
+            this.label7.Location = new System.Drawing.Point(519, 93);
             this.label7.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(124, 18);
@@ -175,7 +176,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Arial", 11.5F);
-            this.label10.Location = new System.Drawing.Point(730, 92);
+            this.label10.Location = new System.Drawing.Point(717, 92);
             this.label10.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(76, 18);
@@ -217,26 +218,28 @@
             this.txtDescripA.Location = new System.Drawing.Point(126, 89);
             this.txtDescripA.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtDescripA.Name = "txtDescripA";
-            this.txtDescripA.Size = new System.Drawing.Size(399, 24);
+            this.txtDescripA.Size = new System.Drawing.Size(383, 24);
             this.txtDescripA.TabIndex = 13;
             // 
             // txtPVentaA
             // 
             this.txtPVentaA.Font = new System.Drawing.Font("Arial", 11F);
-            this.txtPVentaA.Location = new System.Drawing.Point(660, 89);
+            this.txtPVentaA.Location = new System.Drawing.Point(647, 89);
             this.txtPVentaA.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtPVentaA.Name = "txtPVentaA";
             this.txtPVentaA.Size = new System.Drawing.Size(59, 24);
             this.txtPVentaA.TabIndex = 14;
+            this.txtPVentaA.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtPVentaA_KeyPress);
             // 
             // txtCantidadA
             // 
             this.txtCantidadA.Font = new System.Drawing.Font("Arial", 11F);
-            this.txtCantidadA.Location = new System.Drawing.Point(820, 89);
+            this.txtCantidadA.Location = new System.Drawing.Point(807, 89);
             this.txtCantidadA.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.txtCantidadA.Name = "txtCantidadA";
-            this.txtCantidadA.Size = new System.Drawing.Size(26, 24);
+            this.txtCantidadA.Size = new System.Drawing.Size(39, 24);
             this.txtCantidadA.TabIndex = 15;
+            this.txtCantidadA.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtCantidadA_KeyPress);
             // 
             // txtCodE
             // 
@@ -294,106 +297,52 @@
             // 
             this.dgvArtesanias.AllowDrop = true;
             this.dgvArtesanias.AllowUserToAddRows = false;
-            this.dgvArtesanias.AllowUserToOrderColumns = true;
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dgvArtesanias.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dgvArtesanias.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvArtesanias.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial", 10F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvArtesanias.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvArtesanias.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvArtesanias.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.colNombreA,
-            this.colCodA,
-            this.colEstadoA,
-            this.colFechRegisA,
-            this.ColDescripA,
-            this.colPVentaA,
-            this.colCantidad,
+            this.colCodArt,
+            this.colNombreArt,
+            this.colEstadoArt,
+            this.colFechRegArt,
+            this.colDescripArt,
+            this.colPVentaArt,
+            this.colCantArt,
+            this.colEstadoP,
             this.colCodEmp,
-            this.colNombreE,
-            this.colEstadoPuro});
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Arial", 10F);
-            dataGridViewCellStyle5.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvArtesanias.DefaultCellStyle = dataGridViewCellStyle5;
-            this.dgvArtesanias.Location = new System.Drawing.Point(28, 271);
+            this.colNombreEmp});
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Arial", 10F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvArtesanias.DefaultCellStyle = dataGridViewCellStyle3;
+            this.dgvArtesanias.Location = new System.Drawing.Point(30, 273);
             this.dgvArtesanias.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.dgvArtesanias.Name = "dgvArtesanias";
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Arial", 10F);
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvArtesanias.RowHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Arial", 10F);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvArtesanias.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvArtesanias.RowHeadersVisible = false;
-            this.dgvArtesanias.Size = new System.Drawing.Size(818, 205);
+            this.dgvArtesanias.Size = new System.Drawing.Size(816, 205);
             this.dgvArtesanias.TabIndex = 22;
             this.dgvArtesanias.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvArtesanias_CellClick);
-            // 
-            // colNombreA
-            // 
-            this.colNombreA.DataPropertyName = "nombreArt";
-            this.colNombreA.HeaderText = "Nombre Artesania";
-            this.colNombreA.Name = "colNombreA";
-            // 
-            // colCodA
-            // 
-            this.colCodA.DataPropertyName = "codArt";
-            this.colCodA.HeaderText = "Codigo Artesania";
-            this.colCodA.Name = "colCodA";
-            // 
-            // colEstadoA
-            // 
-            this.colEstadoA.DataPropertyName = "estadoArt";
-            this.colEstadoA.HeaderText = "Estado ";
-            this.colEstadoA.Name = "colEstadoA";
-            // 
-            // colFechRegisA
-            // 
-            this.colFechRegisA.DataPropertyName = "fechRegis";
-            this.colFechRegisA.HeaderText = "Fecha de Registro";
-            this.colFechRegisA.Name = "colFechRegisA";
-            // 
-            // ColDescripA
-            // 
-            this.ColDescripA.DataPropertyName = "descripArt";
-            this.ColDescripA.HeaderText = "Descripcion";
-            this.ColDescripA.Name = "ColDescripA";
-            // 
-            // colPVentaA
-            // 
-            this.colPVentaA.DataPropertyName = "precioArt";
-            this.colPVentaA.HeaderText = "Precio de Venta";
-            this.colPVentaA.Name = "colPVentaA";
-            // 
-            // colCantidad
-            // 
-            this.colCantidad.DataPropertyName = "cantidadArt";
-            this.colCantidad.HeaderText = "Cantidad";
-            this.colCantidad.Name = "colCantidad";
-            // 
-            // colCodEmp
-            // 
-            this.colCodEmp.DataPropertyName = "CodEmp";
-            this.colCodEmp.HeaderText = "Codigo Empleado";
-            this.colCodEmp.Name = "colCodEmp";
-            // 
-            // colNombreE
-            // 
-            this.colNombreE.DataPropertyName = "nombreEmp";
-            this.colNombreE.HeaderText = "Nombre Empleado";
-            this.colNombreE.Name = "colNombreE";
-            // 
-            // colEstadoPuro
-            // 
-            this.colEstadoPuro.DataPropertyName = "estadoPuro";
-            this.colEstadoPuro.HeaderText = "Estado Puro";
-            this.colEstadoPuro.Name = "colEstadoPuro";
-            this.colEstadoPuro.Visible = false;
             // 
             // btnRegistrar
             // 
@@ -414,7 +363,7 @@
             this.btnCancelarR.BackColor = System.Drawing.Color.Firebrick;
             this.btnCancelarR.Font = new System.Drawing.Font("Arial", 12.5F, System.Drawing.FontStyle.Bold);
             this.btnCancelarR.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnCancelarR.Location = new System.Drawing.Point(733, 155);
+            this.btnCancelarR.Location = new System.Drawing.Point(733, 204);
             this.btnCancelarR.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnCancelarR.Name = "btnCancelarR";
             this.btnCancelarR.Size = new System.Drawing.Size(113, 36);
@@ -452,7 +401,7 @@
             this.button1.BackColor = System.Drawing.Color.Firebrick;
             this.button1.Font = new System.Drawing.Font("Arial", 12.5F, System.Drawing.FontStyle.Bold);
             this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(733, 204);
+            this.button1.Location = new System.Drawing.Point(733, 155);
             this.button1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(113, 36);
@@ -472,6 +421,83 @@
             this.cboEstado.Name = "cboEstado";
             this.cboEstado.Size = new System.Drawing.Size(95, 24);
             this.cboEstado.TabIndex = 28;
+            // 
+            // colCodArt
+            // 
+            this.colCodArt.DataPropertyName = "codArt";
+            this.colCodArt.HeaderText = "Codigo de Artesania";
+            this.colCodArt.Name = "colCodArt";
+            this.colCodArt.ReadOnly = true;
+            this.colCodArt.Width = 80;
+            // 
+            // colNombreArt
+            // 
+            this.colNombreArt.DataPropertyName = "nombreArt";
+            this.colNombreArt.HeaderText = "Nombre de Artesania";
+            this.colNombreArt.Name = "colNombreArt";
+            this.colNombreArt.ReadOnly = true;
+            this.colNombreArt.Width = 120;
+            // 
+            // colEstadoArt
+            // 
+            this.colEstadoArt.DataPropertyName = "estadoArt";
+            this.colEstadoArt.HeaderText = "Estado";
+            this.colEstadoArt.Name = "colEstadoArt";
+            this.colEstadoArt.ReadOnly = true;
+            // 
+            // colFechRegArt
+            // 
+            this.colFechRegArt.DataPropertyName = "fechRegis";
+            this.colFechRegArt.HeaderText = "Fecha de Registro";
+            this.colFechRegArt.Name = "colFechRegArt";
+            this.colFechRegArt.ReadOnly = true;
+            // 
+            // colDescripArt
+            // 
+            this.colDescripArt.DataPropertyName = "descripArt";
+            this.colDescripArt.HeaderText = "Descripcion";
+            this.colDescripArt.Name = "colDescripArt";
+            this.colDescripArt.ReadOnly = true;
+            this.colDescripArt.Width = 250;
+            // 
+            // colPVentaArt
+            // 
+            this.colPVentaArt.DataPropertyName = "precioArt";
+            this.colPVentaArt.HeaderText = "Precio de Venta";
+            this.colPVentaArt.Name = "colPVentaArt";
+            this.colPVentaArt.ReadOnly = true;
+            // 
+            // colCantArt
+            // 
+            this.colCantArt.DataPropertyName = "cantidadArt";
+            this.colCantArt.HeaderText = "Cantidad";
+            this.colCantArt.Name = "colCantArt";
+            this.colCantArt.ReadOnly = true;
+            this.colCantArt.Width = 80;
+            // 
+            // colEstadoP
+            // 
+            this.colEstadoP.DataPropertyName = "estadoPuro";
+            this.colEstadoP.HeaderText = "Estado Puro";
+            this.colEstadoP.Name = "colEstadoP";
+            this.colEstadoP.ReadOnly = true;
+            this.colEstadoP.Visible = false;
+            // 
+            // colCodEmp
+            // 
+            this.colCodEmp.DataPropertyName = "CodEmp";
+            this.colCodEmp.HeaderText = "Codigo de Empleado";
+            this.colCodEmp.Name = "colCodEmp";
+            this.colCodEmp.ReadOnly = true;
+            this.colCodEmp.Width = 80;
+            // 
+            // colNombreEmp
+            // 
+            this.colNombreEmp.DataPropertyName = "nombreEmp";
+            this.colNombreEmp.HeaderText = "Nombre de Empleado";
+            this.colNombreEmp.Name = "colNombreEmp";
+            this.colNombreEmp.ReadOnly = true;
+            this.colNombreEmp.Width = 120;
             // 
             // FrmRegistrarArtesania
             // 
@@ -547,18 +573,18 @@
         private System.Windows.Forms.Button btnCancelarR;
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.ComboBox cboEmpleados;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colNombreA;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colCodA;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colEstadoA;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colFechRegisA;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ColDescripA;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colPVentaA;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colCantidad;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colCodEmp;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colNombreE;
-        private System.Windows.Forms.DataGridViewTextBoxColumn colEstadoPuro;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ComboBox cboEstado;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colCodArt;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colNombreArt;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colEstadoArt;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colFechRegArt;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colDescripArt;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colPVentaArt;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colCantArt;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colEstadoP;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colCodEmp;
+        private System.Windows.Forms.DataGridViewTextBoxColumn colNombreEmp;
     }
 }
 
