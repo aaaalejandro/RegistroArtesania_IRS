@@ -95,7 +95,7 @@ namespace RegistroArtesania_IRS
 
         private void btnCancelarR_Click(object sender, EventArgs e)
         {
-            
+            dgvArtesanias.DataSource = Art.CancelarRegistro(Con);
         }
 
         private void dgvArtesanias_CellClick(object sender, DataGridViewCellEventArgs e)

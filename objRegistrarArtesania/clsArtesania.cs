@@ -136,8 +136,7 @@ namespace objRegistrarArtesania
         {
             SqlDataAdapter dap = new SqlDataAdapter("sp_ListaArtesania", CadenaSQL);
             dap.SelectCommand.CommandType = CommandType.StoredProcedure;
-            if (dst.Tables.Contains("Artesanias") == true)
-            {
+            if (dst.Tables.Contains("Artesanias") == true) {
                 dst.Tables["Artesanias"].Rows.Clear();
             }
             dap.Fill(dst, "Artesanias");
@@ -158,18 +157,14 @@ namespace objRegistrarArtesania
             dap.SelectCommand.Parameters.Add("@codArt", SqlDbType.Char, 4);
             dap.SelectCommand.Parameters["@codArt"].Direction = ParameterDirection.Output;
 
-            if (CadenaSQL.State == ConnectionState.Closed)
-            {
+            if (CadenaSQL.State == ConnectionState.Closed) {
                 CadenaSQL.Open();
             }
-            try
-            {
+            try {
                 dap.SelectCommand.ExecuteNonQuery();
                 _codArt = dap.SelectCommand.Parameters["@codArt"].Value.ToString();
-                return "1";
-            }
-            catch
-            {
+                return "1"; 
+            } catch {
                 return "0";
             }
         }
@@ -179,17 +174,26 @@ namespace objRegistrarArtesania
             dap.SelectCommand.CommandType = CommandType.StoredProcedure;
             dap.SelectCommand.Parameters.AddWithValue("@codArt", _codArt);
 
-            if (CadenaSQL.State == ConnectionState.Closed)
-            {
+            if (CadenaSQL.State == ConnectionState.Closed) {
                 CadenaSQL.Open();
-            }
-            try
-            {
+            } try {
                 dap.SelectCommand.ExecuteNonQuery();
                 return "1";
+            } catch {
+                return "0";
             }
-            catch
-            {
+        }
+        public String CancelarRegistro(SqlConnection CadenaSQL)
+        {
+            SqlDataAdapter dap = new SqlDataAdapter("sp_CancelarRegistro", CadenaSQL);
+            dap.SelectCommand.CommandType = CommandType.StoredProcedure;
+
+            if (CadenaSQL.State == ConnectionState.Closed) {
+                CadenaSQL.Open();
+            } try {
+                dap.SelectCommand.ExecuteNonQuery();
+                return "1";
+            } catch {
                 return "0";
             }
         }
