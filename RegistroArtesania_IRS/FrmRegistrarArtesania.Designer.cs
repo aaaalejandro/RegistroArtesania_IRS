@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -51,15 +51,7 @@
             this.txtCodE = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
-            this.txtBuscarA = new System.Windows.Forms.TextBox();
             this.dgvArtesanias = new System.Windows.Forms.DataGridView();
-            this.btnRegistrar = new System.Windows.Forms.Button();
-            this.btnCancelarR = new System.Windows.Forms.Button();
-            this.btnSalir = new System.Windows.Forms.Button();
-            this.cboEmpleados = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
-            this.cboEstado = new System.Windows.Forms.ComboBox();
             this.colCodArt = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colNombreArt = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colEstadoArt = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -70,6 +62,12 @@
             this.colEstadoP = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colCodEmp = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.colNombreEmp = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnRegistrar = new System.Windows.Forms.Button();
+            this.btnCancelarR = new System.Windows.Forms.Button();
+            this.btnSalir = new System.Windows.Forms.Button();
+            this.cboEmpleados = new System.Windows.Forms.ComboBox();
+            this.button1 = new System.Windows.Forms.Button();
+            this.cboEstado = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvArtesanias)).BeginInit();
             this.SuspendLayout();
             // 
@@ -88,7 +86,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Arial", 12.5F, System.Drawing.FontStyle.Bold);
-            this.label2.Location = new System.Drawing.Point(25, 239);
+            this.label2.Location = new System.Drawing.Point(26, 204);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(211, 19);
@@ -273,41 +271,21 @@
             this.label12.TabIndex = 16;
             this.label12.Text = "Nombre:";
             // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Arial", 11.5F);
-            this.label13.Location = new System.Drawing.Point(26, 207);
-            this.label13.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(240, 18);
-            this.label13.TabIndex = 20;
-            this.label13.Text = "Buscar por Codigo de Artesania: ";
-            // 
-            // txtBuscarA
-            // 
-            this.txtBuscarA.Font = new System.Drawing.Font("Arial", 11F);
-            this.txtBuscarA.Location = new System.Drawing.Point(270, 204);
-            this.txtBuscarA.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.txtBuscarA.Name = "txtBuscarA";
-            this.txtBuscarA.Size = new System.Drawing.Size(46, 24);
-            this.txtBuscarA.TabIndex = 21;
-            // 
             // dgvArtesanias
             // 
             this.dgvArtesanias.AllowDrop = true;
             this.dgvArtesanias.AllowUserToAddRows = false;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dgvArtesanias.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dgvArtesanias.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
             this.dgvArtesanias.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial", 10F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvArtesanias.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Arial", 10F);
+            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvArtesanias.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
             this.dgvArtesanias.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvArtesanias.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colCodArt,
@@ -320,107 +298,29 @@
             this.colEstadoP,
             this.colCodEmp,
             this.colNombreEmp});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Arial", 10F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvArtesanias.DefaultCellStyle = dataGridViewCellStyle3;
-            this.dgvArtesanias.Location = new System.Drawing.Point(30, 273);
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Arial", 10F);
+            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvArtesanias.DefaultCellStyle = dataGridViewCellStyle11;
+            this.dgvArtesanias.Location = new System.Drawing.Point(30, 237);
             this.dgvArtesanias.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.dgvArtesanias.Name = "dgvArtesanias";
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Arial", 10F);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvArtesanias.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Arial", 10F);
+            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvArtesanias.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
             this.dgvArtesanias.RowHeadersVisible = false;
-            this.dgvArtesanias.Size = new System.Drawing.Size(816, 205);
+            this.dgvArtesanias.Size = new System.Drawing.Size(816, 241);
             this.dgvArtesanias.TabIndex = 22;
             this.dgvArtesanias.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvArtesanias_CellClick);
-            // 
-            // btnRegistrar
-            // 
-            this.btnRegistrar.BackColor = System.Drawing.Color.Firebrick;
-            this.btnRegistrar.Font = new System.Drawing.Font("Arial", 12.5F, System.Drawing.FontStyle.Bold);
-            this.btnRegistrar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnRegistrar.Location = new System.Drawing.Point(606, 155);
-            this.btnRegistrar.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.btnRegistrar.Name = "btnRegistrar";
-            this.btnRegistrar.Size = new System.Drawing.Size(113, 36);
-            this.btnRegistrar.TabIndex = 23;
-            this.btnRegistrar.Text = "Registrar";
-            this.btnRegistrar.UseVisualStyleBackColor = false;
-            this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
-            // 
-            // btnCancelarR
-            // 
-            this.btnCancelarR.BackColor = System.Drawing.Color.Firebrick;
-            this.btnCancelarR.Font = new System.Drawing.Font("Arial", 12.5F, System.Drawing.FontStyle.Bold);
-            this.btnCancelarR.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnCancelarR.Location = new System.Drawing.Point(733, 204);
-            this.btnCancelarR.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.btnCancelarR.Name = "btnCancelarR";
-            this.btnCancelarR.Size = new System.Drawing.Size(113, 36);
-            this.btnCancelarR.TabIndex = 24;
-            this.btnCancelarR.Text = "Cancelar";
-            this.btnCancelarR.UseVisualStyleBackColor = false;
-            this.btnCancelarR.Click += new System.EventHandler(this.btnCancelarR_Click);
-            // 
-            // btnSalir
-            // 
-            this.btnSalir.BackColor = System.Drawing.Color.Firebrick;
-            this.btnSalir.Font = new System.Drawing.Font("Arial", 12.5F, System.Drawing.FontStyle.Bold);
-            this.btnSalir.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnSalir.Location = new System.Drawing.Point(606, 204);
-            this.btnSalir.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.btnSalir.Name = "btnSalir";
-            this.btnSalir.Size = new System.Drawing.Size(113, 36);
-            this.btnSalir.TabIndex = 25;
-            this.btnSalir.Text = "Salir";
-            this.btnSalir.UseVisualStyleBackColor = false;
-            this.btnSalir.Click += new System.EventHandler(this.button2_Click);
-            // 
-            // cboEmpleados
-            // 
-            this.cboEmpleados.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboEmpleados.FormattingEnabled = true;
-            this.cboEmpleados.Location = new System.Drawing.Point(99, 163);
-            this.cboEmpleados.Name = "cboEmpleados";
-            this.cboEmpleados.Size = new System.Drawing.Size(174, 24);
-            this.cboEmpleados.TabIndex = 26;
-            this.cboEmpleados.SelectedIndexChanged += new System.EventHandler(this.cboEmpleados_SelectedIndexChanged);
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Firebrick;
-            this.button1.Font = new System.Drawing.Font("Arial", 12.5F, System.Drawing.FontStyle.Bold);
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(733, 155);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(113, 36);
-            this.button1.TabIndex = 27;
-            this.button1.Text = "Eliminar";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // cboEstado
-            // 
-            this.cboEstado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.cboEstado.FormattingEnabled = true;
-            this.cboEstado.Items.AddRange(new object[] {
-            "Normal",
-            "Mermado"});
-            this.cboEstado.Location = new System.Drawing.Point(561, 54);
-            this.cboEstado.Name = "cboEstado";
-            this.cboEstado.Size = new System.Drawing.Size(95, 24);
-            this.cboEstado.TabIndex = 28;
             // 
             // colCodArt
             // 
@@ -499,6 +399,84 @@
             this.colNombreEmp.ReadOnly = true;
             this.colNombreEmp.Width = 120;
             // 
+            // btnRegistrar
+            // 
+            this.btnRegistrar.BackColor = System.Drawing.Color.Firebrick;
+            this.btnRegistrar.Font = new System.Drawing.Font("Arial", 12.5F, System.Drawing.FontStyle.Bold);
+            this.btnRegistrar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnRegistrar.Location = new System.Drawing.Point(606, 130);
+            this.btnRegistrar.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnRegistrar.Name = "btnRegistrar";
+            this.btnRegistrar.Size = new System.Drawing.Size(113, 36);
+            this.btnRegistrar.TabIndex = 23;
+            this.btnRegistrar.Text = "Registrar";
+            this.btnRegistrar.UseVisualStyleBackColor = false;
+            this.btnRegistrar.Click += new System.EventHandler(this.btnRegistrar_Click);
+            // 
+            // btnCancelarR
+            // 
+            this.btnCancelarR.BackColor = System.Drawing.Color.Firebrick;
+            this.btnCancelarR.Font = new System.Drawing.Font("Arial", 12.5F, System.Drawing.FontStyle.Bold);
+            this.btnCancelarR.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnCancelarR.Location = new System.Drawing.Point(733, 187);
+            this.btnCancelarR.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnCancelarR.Name = "btnCancelarR";
+            this.btnCancelarR.Size = new System.Drawing.Size(113, 36);
+            this.btnCancelarR.TabIndex = 24;
+            this.btnCancelarR.Text = "Cancelar";
+            this.btnCancelarR.UseVisualStyleBackColor = false;
+            this.btnCancelarR.Click += new System.EventHandler(this.btnCancelarR_Click);
+            // 
+            // btnSalir
+            // 
+            this.btnSalir.BackColor = System.Drawing.Color.Firebrick;
+            this.btnSalir.Font = new System.Drawing.Font("Arial", 12.5F, System.Drawing.FontStyle.Bold);
+            this.btnSalir.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnSalir.Location = new System.Drawing.Point(606, 187);
+            this.btnSalir.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnSalir.Name = "btnSalir";
+            this.btnSalir.Size = new System.Drawing.Size(113, 36);
+            this.btnSalir.TabIndex = 25;
+            this.btnSalir.Text = "Salir";
+            this.btnSalir.UseVisualStyleBackColor = false;
+            this.btnSalir.Click += new System.EventHandler(this.button2_Click);
+            // 
+            // cboEmpleados
+            // 
+            this.cboEmpleados.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboEmpleados.FormattingEnabled = true;
+            this.cboEmpleados.Location = new System.Drawing.Point(99, 163);
+            this.cboEmpleados.Name = "cboEmpleados";
+            this.cboEmpleados.Size = new System.Drawing.Size(174, 24);
+            this.cboEmpleados.TabIndex = 26;
+            this.cboEmpleados.SelectedIndexChanged += new System.EventHandler(this.cboEmpleados_SelectedIndexChanged);
+            // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Firebrick;
+            this.button1.Font = new System.Drawing.Font("Arial", 12.5F, System.Drawing.FontStyle.Bold);
+            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.button1.Location = new System.Drawing.Point(733, 130);
+            this.button1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(113, 36);
+            this.button1.TabIndex = 27;
+            this.button1.Text = "Eliminar";
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // cboEstado
+            // 
+            this.cboEstado.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cboEstado.FormattingEnabled = true;
+            this.cboEstado.Items.AddRange(new object[] {
+            "Normal",
+            "Mermado"});
+            this.cboEstado.Location = new System.Drawing.Point(561, 54);
+            this.cboEstado.Name = "cboEstado";
+            this.cboEstado.Size = new System.Drawing.Size(95, 24);
+            this.cboEstado.TabIndex = 28;
+            // 
             // FrmRegistrarArtesania
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
@@ -511,8 +489,6 @@
             this.Controls.Add(this.btnCancelarR);
             this.Controls.Add(this.btnRegistrar);
             this.Controls.Add(this.dgvArtesanias);
-            this.Controls.Add(this.txtBuscarA);
-            this.Controls.Add(this.label13);
             this.Controls.Add(this.txtCodE);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label12);
@@ -566,8 +542,6 @@
         private System.Windows.Forms.TextBox txtCodE;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox txtBuscarA;
         private System.Windows.Forms.DataGridView dgvArtesanias;
         private System.Windows.Forms.Button btnRegistrar;
         private System.Windows.Forms.Button btnCancelarR;
