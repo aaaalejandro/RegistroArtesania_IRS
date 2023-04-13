@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -275,17 +275,17 @@
             // 
             this.dgvArtesanias.AllowDrop = true;
             this.dgvArtesanias.AllowUserToAddRows = false;
-            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dgvArtesanias.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dgvArtesanias.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvArtesanias.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Arial", 10F);
-            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvArtesanias.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial", 10F);
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvArtesanias.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvArtesanias.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvArtesanias.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colCodArt,
@@ -298,25 +298,25 @@
             this.colEstadoP,
             this.colCodEmp,
             this.colNombreEmp});
-            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle11.Font = new System.Drawing.Font("Arial", 10F);
-            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvArtesanias.DefaultCellStyle = dataGridViewCellStyle11;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Arial", 10F);
+            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvArtesanias.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvArtesanias.Location = new System.Drawing.Point(30, 237);
             this.dgvArtesanias.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.dgvArtesanias.Name = "dgvArtesanias";
-            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle12.Font = new System.Drawing.Font("Arial", 10F);
-            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvArtesanias.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Arial", 10F);
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvArtesanias.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvArtesanias.RowHeadersVisible = false;
             this.dgvArtesanias.Size = new System.Drawing.Size(816, 241);
             this.dgvArtesanias.TabIndex = 22;
@@ -327,7 +327,6 @@
             this.colCodArt.DataPropertyName = "codArt";
             this.colCodArt.HeaderText = "Codigo de Artesania";
             this.colCodArt.Name = "colCodArt";
-            this.colCodArt.ReadOnly = true;
             this.colCodArt.Width = 80;
             // 
             // colNombreArt
@@ -335,7 +334,6 @@
             this.colNombreArt.DataPropertyName = "nombreArt";
             this.colNombreArt.HeaderText = "Nombre de Artesania";
             this.colNombreArt.Name = "colNombreArt";
-            this.colNombreArt.ReadOnly = true;
             this.colNombreArt.Width = 120;
             // 
             // colEstadoArt
@@ -343,21 +341,18 @@
             this.colEstadoArt.DataPropertyName = "estadoArt";
             this.colEstadoArt.HeaderText = "Estado";
             this.colEstadoArt.Name = "colEstadoArt";
-            this.colEstadoArt.ReadOnly = true;
             // 
             // colFechRegArt
             // 
             this.colFechRegArt.DataPropertyName = "fechRegis";
             this.colFechRegArt.HeaderText = "Fecha de Registro";
             this.colFechRegArt.Name = "colFechRegArt";
-            this.colFechRegArt.ReadOnly = true;
             // 
             // colDescripArt
             // 
             this.colDescripArt.DataPropertyName = "descripArt";
             this.colDescripArt.HeaderText = "Descripcion";
             this.colDescripArt.Name = "colDescripArt";
-            this.colDescripArt.ReadOnly = true;
             this.colDescripArt.Width = 250;
             // 
             // colPVentaArt
@@ -365,14 +360,12 @@
             this.colPVentaArt.DataPropertyName = "precioArt";
             this.colPVentaArt.HeaderText = "Precio de Venta";
             this.colPVentaArt.Name = "colPVentaArt";
-            this.colPVentaArt.ReadOnly = true;
             // 
             // colCantArt
             // 
             this.colCantArt.DataPropertyName = "cantidadArt";
             this.colCantArt.HeaderText = "Cantidad";
             this.colCantArt.Name = "colCantArt";
-            this.colCantArt.ReadOnly = true;
             this.colCantArt.Width = 80;
             // 
             // colEstadoP
@@ -380,7 +373,6 @@
             this.colEstadoP.DataPropertyName = "estadoPuro";
             this.colEstadoP.HeaderText = "Estado Puro";
             this.colEstadoP.Name = "colEstadoP";
-            this.colEstadoP.ReadOnly = true;
             this.colEstadoP.Visible = false;
             // 
             // colCodEmp
@@ -388,7 +380,6 @@
             this.colCodEmp.DataPropertyName = "CodEmp";
             this.colCodEmp.HeaderText = "Codigo de Empleado";
             this.colCodEmp.Name = "colCodEmp";
-            this.colCodEmp.ReadOnly = true;
             this.colCodEmp.Width = 80;
             // 
             // colNombreEmp
@@ -396,7 +387,6 @@
             this.colNombreEmp.DataPropertyName = "nombreEmp";
             this.colNombreEmp.HeaderText = "Nombre de Empleado";
             this.colNombreEmp.Name = "colNombreEmp";
-            this.colNombreEmp.ReadOnly = true;
             this.colNombreEmp.Width = 120;
             // 
             // btnRegistrar

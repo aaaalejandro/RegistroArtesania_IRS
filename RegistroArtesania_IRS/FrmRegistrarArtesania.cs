@@ -96,6 +96,8 @@ namespace RegistroArtesania_IRS
         private void btnCancelarR_Click(object sender, EventArgs e)
         {
             dgvArtesanias.DataSource = Art.CancelarRegistro(Con);
+            Con.Close();
+            dgvArtesanias.DataSource = Art.ListaArtesania(Con);
         }
 
         private void dgvArtesanias_CellClick(object sender, DataGridViewCellEventArgs e)
@@ -164,6 +166,82 @@ namespace RegistroArtesania_IRS
             if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar)) {
                 e.Handled = true;
             }
+        }
+
+
+        
+        private void CargarCabecera()
+        {
+            DataGridViewTextBoxColumn c1 = new DataGridViewTextBoxColumn();
+            c1.HeaderText = "Codigo de Artesania";
+            c1.Name = "colCodArt";
+            c1.DataPropertyName = "codArt";
+            dgvArtesanias.Columns.Add(c1);
+
+            DataGridViewTextBoxColumn c2 = new DataGridViewTextBoxColumn();
+            c2.HeaderText = "Nombre de Artesania";
+            c2.Name = "colNombreArt";
+            c2.DataPropertyName = "nombreArt";
+            dgvArtesanias.Columns.Add(c2);
+
+            DataGridViewTextBoxColumn c3 = new DataGridViewTextBoxColumn();
+            c3.HeaderText = "Estado";
+            c3.Name = "colEstadoArt";
+            c3.DataPropertyName = "estadoArt";
+            dgvArtesanias.Columns.Add(c3);
+
+            DataGridViewTextBoxColumn c4 = new DataGridViewTextBoxColumn();
+            c4.HeaderText = "Fecha de Registro";
+            c4.Name = "colFechRegArtArt";
+            c4.DataPropertyName = "fechRegis";
+            dgvArtesanias.Columns.Add(c4);
+
+            DataGridViewTextBoxColumn c5 = new DataGridViewTextBoxColumn();
+            c5.HeaderText = "Descripcion";
+            c5.Name = "colDescripArt";
+            c5.DataPropertyName = "descripArt";
+            dgvArtesanias.Columns.Add(c5);
+
+            DataGridViewTextBoxColumn c6 = new DataGridViewTextBoxColumn();
+            c6.HeaderText = "Precio de Venta";
+            c6.Name = "colPVentaArt";
+            c6.DataPropertyName = "precioArt";
+            dgvArtesanias.Columns.Add(c6);
+
+            DataGridViewTextBoxColumn c7 = new DataGridViewTextBoxColumn();
+            c7.HeaderText = "Cantidad";
+            c7.Name = "colCantArt";
+            c7.DataPropertyName = "cantidadArt";
+            dgvArtesanias.Columns.Add(c7);
+
+            DataGridViewTextBoxColumn c8 = new DataGridViewTextBoxColumn();
+            c8.HeaderText = "Estado Puro";
+            c8.Name = "colEstadoP";
+            c8.DataPropertyName = "estadoPuro";
+            dgvArtesanias.Columns.Add(c8);
+
+            DataGridViewTextBoxColumn c9 = new DataGridViewTextBoxColumn();
+            c9.HeaderText = "Codigo de Empleado";
+            c9.Name = "colCodEmp";
+            c9.DataPropertyName = "CodEmp";
+            dgvArtesanias.Columns.Add(c9);
+
+            DataGridViewTextBoxColumn c10 = new DataGridViewTextBoxColumn();
+            c10.HeaderText = "Nombre de Empleado";
+            c10.Name = "colNombreEmp";
+            c10.DataPropertyName = "nombreEmp";
+            dgvArtesanias.Columns.Add(c10);
+
+            dgvArtesanias.Columns["colEstadoP"].Visible = false;
+            dgvArtesanias.Columns["colCodArt"].ReadOnly = true;
+            dgvArtesanias.Columns["colNombreArt"].ReadOnly = true;
+            dgvArtesanias.Columns["colEstadoArt"].ReadOnly = true;
+            dgvArtesanias.Columns["colFechRegArtArt"].ReadOnly = true;
+            dgvArtesanias.Columns["colDescripArt"].ReadOnly = true;
+            dgvArtesanias.Columns["colPVentaArt"].ReadOnly = true;
+            dgvArtesanias.Columns["colCantArt"].ReadOnly = true;
+            dgvArtesanias.Columns["colCodEmp"].ReadOnly = true;
+            dgvArtesanias.Columns["colNombreEmp"].ReadOnly = true;
         }
     }
 }
