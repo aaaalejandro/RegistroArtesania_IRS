@@ -12,3 +12,17 @@ E:\Clases Idat\Tercer CIclo\Ingeniería de Requerimiento de Software\Sofware-Reg
 E:\Clases Idat\Tercer CIclo\Ingeniería de Requerimiento de Software\Sofware-Registrar_Artesania\RegistroArtesania_IRS\RegistroArtesania_IRS\bin\Debug\objRegistrarArtesania.dll
 E:\Clases Idat\Tercer CIclo\Ingeniería de Requerimiento de Software\Sofware-Registrar_Artesania\RegistroArtesania_IRS\RegistroArtesania_IRS\bin\Debug\objRegistrarArtesania.pdb
 E:\Clases Idat\Tercer CIclo\Ingeniería de Requerimiento de Software\Sofware-Registrar_Artesania\RegistroArtesania_IRS\RegistroArtesania_IRS\obj\Debug\RegistroArtesania_IRS.csproj.CopyComplete
+C:\Users\Usuario\Desktop\Kevin\IDAT\CICLO 3\Ingeniería Requerimientos Software\PROTOTIPO ING - ARTESANIA\RegistroArtesania_IRS\bin\Debug\RegistroArtesania_IRS.exe.config
+C:\Users\Usuario\Desktop\Kevin\IDAT\CICLO 3\Ingeniería Requerimientos Software\PROTOTIPO ING - ARTESANIA\RegistroArtesania_IRS\bin\Debug\RegistroArtesania_IRS.exe
+C:\Users\Usuario\Desktop\Kevin\IDAT\CICLO 3\Ingeniería Requerimientos Software\PROTOTIPO ING - ARTESANIA\RegistroArtesania_IRS\bin\Debug\RegistroArtesania_IRS.pdb
+C:\Users\Usuario\Desktop\Kevin\IDAT\CICLO 3\Ingeniería Requerimientos Software\PROTOTIPO ING - ARTESANIA\RegistroArtesania_IRS\bin\Debug\objRegistrarArtesania.dll
+C:\Users\Usuario\Desktop\Kevin\IDAT\CICLO 3\Ingeniería Requerimientos Software\PROTOTIPO ING - ARTESANIA\RegistroArtesania_IRS\bin\Debug\objRegistrarArtesania.pdb
+C:\Users\Usuario\Desktop\Kevin\IDAT\CICLO 3\Ingeniería Requerimientos Software\PROTOTIPO ING - ARTESANIA\RegistroArtesania_IRS\obj\Debug\RegistroArtesania_IRS.csproj.AssemblyReference.cache
+C:\Users\Usuario\Desktop\Kevin\IDAT\CICLO 3\Ingeniería Requerimientos Software\PROTOTIPO ING - ARTESANIA\RegistroArtesania_IRS\obj\Debug\RegistroArtesania_IRS.csproj.SuggestedBindingRedirects.cache
+C:\Users\Usuario\Desktop\Kevin\IDAT\CICLO 3\Ingeniería Requerimientos Software\PROTOTIPO ING - ARTESANIA\RegistroArtesania_IRS\obj\Debug\RegistroArtesania_IRS.FrmRegistrarArtesania.resources
+C:\Users\Usuario\Desktop\Kevin\IDAT\CICLO 3\Ingeniería Requerimientos Software\PROTOTIPO ING - ARTESANIA\RegistroArtesania_IRS\obj\Debug\RegistroArtesania_IRS.Properties.Resources.resources
+C:\Users\Usuario\Desktop\Kevin\IDAT\CICLO 3\Ingeniería Requerimientos Software\PROTOTIPO ING - ARTESANIA\RegistroArtesania_IRS\obj\Debug\RegistroArtesania_IRS.csproj.GenerateResource.cache
+C:\Users\Usuario\Desktop\Kevin\IDAT\CICLO 3\Ingeniería Requerimientos Software\PROTOTIPO ING - ARTESANIA\RegistroArtesania_IRS\obj\Debug\RegistroArtesania_IRS.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\Kevin\IDAT\CICLO 3\Ingeniería Requerimientos Software\PROTOTIPO ING - ARTESANIA\RegistroArtesania_IRS\obj\Debug\RegistroArtesania_IRS.csproj.CopyComplete
+C:\Users\Usuario\Desktop\Kevin\IDAT\CICLO 3\Ingeniería Requerimientos Software\PROTOTIPO ING - ARTESANIA\RegistroArtesania_IRS\obj\Debug\RegistroArtesania_IRS.exe
+C:\Users\Usuario\Desktop\Kevin\IDAT\CICLO 3\Ingeniería Requerimientos Software\PROTOTIPO ING - ARTESANIA\RegistroArtesania_IRS\obj\Debug\RegistroArtesania_IRS.pdb
