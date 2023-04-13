@@ -21,6 +21,7 @@ namespace RegistroArtesania_IRS
 
         // PRUEBA Y ERROR XD
 
+
         SqlConnection Con = new SqlConnection("User Id=sa;Password=123456;Initial Catalog=IRS1;Data Source=(local);");
 
         objRegistrarArtesania.clsArtesania Art = new objRegistrarArtesania.clsArtesania();
