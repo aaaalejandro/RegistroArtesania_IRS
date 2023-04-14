@@ -72,6 +72,13 @@ As
 update Artesanias set estadoPuro='0'
 Where codArt = @codArt
 
+
+Create procedure sp_CancelarRegistro
+AS
+Begin
+	DELETE FROM Artesanias;
+End
+
 Select * From Artesanias
 
 --drop procedure sp_ListaArtesania

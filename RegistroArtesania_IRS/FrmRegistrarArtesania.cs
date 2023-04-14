@@ -97,6 +97,7 @@ namespace RegistroArtesania_IRS
         {
             dgvArtesanias.DataSource = Art.CancelarRegistro(Con);
             Con.Close();
+
             dgvArtesanias.DataSource = Art.ListaArtesania(Con);
         }
 
@@ -169,7 +170,7 @@ namespace RegistroArtesania_IRS
         }
 
 
-        
+        /*
         private void CargarCabecera()
         {
             DataGridViewTextBoxColumn c1 = new DataGridViewTextBoxColumn();
@@ -242,6 +243,6 @@ namespace RegistroArtesania_IRS
             dgvArtesanias.Columns["colCantArt"].ReadOnly = true;
             dgvArtesanias.Columns["colCodEmp"].ReadOnly = true;
             dgvArtesanias.Columns["colNombreEmp"].ReadOnly = true;
-        }
+        } */
     }
 }
