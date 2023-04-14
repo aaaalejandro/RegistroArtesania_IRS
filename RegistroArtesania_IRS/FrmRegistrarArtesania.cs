@@ -19,9 +19,6 @@ namespace RegistroArtesania_IRS
             AgregarEmpleados();
         }
 
-        // PRUEBA Y ERROR XD
-
-
         SqlConnection Con = new SqlConnection("User Id=sa;Password=12345;Initial Catalog=IRS1;Data Source=(local);");
 
         objRegistrarArtesania.clsArtesania Art = new objRegistrarArtesania.clsArtesania();
