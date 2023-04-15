@@ -98,21 +98,21 @@ namespace RegistroArtesania_IRS
 
         private void dgvArtesanias_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            if (e.RowIndex == -1)
+                return;
+
             int fila = dgvArtesanias.CurrentCell.RowIndex;
 
             if (dgvArtesanias.Rows[fila].Cells["colCodArt"].Value != null)
-            {
                 txtCodA.Text = dgvArtesanias.Rows[fila].Cells["colCodArt"].Value.ToString();
-            }
             
             txtNombreA.Text = dgvArtesanias.Rows[fila].Cells["colNombreArt"].Value.ToString();
             cboEstado.Text = dgvArtesanias.Rows[fila].Cells["colEstadoArt"].Value.ToString();
             
             string fechaString = dgvArtesanias.Rows[fila].Cells["colFechRegArt"].Value.ToString();
             DateTime fecha;
-            if (DateTime.TryParseExact(fechaString, "dd/MM/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out fecha)) {
+            if (DateTime.TryParseExact(fechaString, "dd/MM/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out fecha)) 
                 dtpA.Value = fecha;
-            }
 
             txtDescripA.Text = dgvArtesanias.Rows[fila].Cells["colDescripArt"].Value.ToString();
             txtPVentaA.Text = dgvArtesanias.Rows[fila].Cells["colPVentaArt"].Value.ToString();

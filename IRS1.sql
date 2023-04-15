@@ -72,16 +72,27 @@ As
 update Artesanias set estadoPuro='0'
 Where codArt = @codArt
 
-
-Create procedure sp_CancelarRegistro
-AS
-Begin
-	DELETE FROM Artesanias;
-End
+go
+Create procedure sp_ModificaArtesania
+	@codArt			char(4) output, 
+	@nombreArt		varchar(30),
+	@estadoArt		varchar(10),
+	@fechRegis		date,
+	@descripArt		varchar(100),
+	@precioArt		decimal(10,2),
+	@cantidadArt	int,
+	@CodEmp			char(4),
+	@nombreEmp		varchar(30)
+As	
+update Artesanias set nombreArt = @nombreArt, estadoArt	= @nombreArt, fechRegis	= @fechRegis, descripArt = @descripArt,
+	precioArt = @precioArt, cantidadArt	= @cantidadArt, CodEmp = @CodEmp, nombreEmp = @nombreEmp
+Where codArt = @codArt
 
 Select * From Artesanias
-
+--DELETE FROM Artesanias 
+--drop procedure sp_ModificaArtesania
+--drop procedure sp_CancelarRegistro;
 --drop procedure sp_ListaArtesania
 --drop procedure sp_IngresaArtesania
---drop procedure sp_EliminaArtesania
+--drop procedure sp_EliminwaArtesania
 
