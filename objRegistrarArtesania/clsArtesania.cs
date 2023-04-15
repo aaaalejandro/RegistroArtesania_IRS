@@ -207,19 +207,5 @@ namespace objRegistrarArtesania
                 return "0";
             }
         }
-        public String CancelarRegistro(SqlConnection CadenaSQL)
-        {
-            SqlDataAdapter dap = new SqlDataAdapter("sp_CancelarRegistro", CadenaSQL);
-            dap.SelectCommand.CommandType = CommandType.StoredProcedure;
-
-            if (CadenaSQL.State == ConnectionState.Closed) {
-                CadenaSQL.Open();
-            } try {
-                dap.SelectCommand.ExecuteNonQuery();
-                return "1";
-            } catch {
-                return "0";
-            }
-        }
     }
 }
