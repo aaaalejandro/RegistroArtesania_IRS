@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Data.SqlClient;
 using System.Drawing;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -102,15 +103,25 @@ namespace RegistroArtesania_IRS
         {
             int fila = dgvArtesanias.CurrentCell.RowIndex;
 
-            txtCodA.Text = dgvArtesanias.Rows[fila].Cells[0].Value.ToString();
-            txtNombreA.Text = dgvArtesanias.Rows[fila].Cells[1].Value.ToString();
-            cboEstado.Text = dgvArtesanias.Rows[fila].Cells[2].Value.ToString();
-            dtpA.Text = dgvArtesanias.Rows[fila].Cells[3].Value.ToString();
-            txtDescripA.Text = dgvArtesanias.Rows[fila].Cells[4].Value.ToString();
-            txtPVentaA.Text = dgvArtesanias.Rows[fila].Cells[5].Value.ToString();
-            txtCantidadA.Text = dgvArtesanias.Rows[fila].Cells[6].Value.ToString();
-            cboEmpleados.Text = dgvArtesanias.Rows[fila].Cells[7].Value.ToString();
-            txtCodE.Text = dgvArtesanias.Rows[fila].Cells[8].Value.ToString();
+            if (dgvArtesanias.Rows[fila].Cells["colCodArt"].Value != null)
+            {
+                txtCodA.Text = dgvArtesanias.Rows[fila].Cells["colCodArt"].Value.ToString();
+            }
+            
+            txtNombreA.Text = dgvArtesanias.Rows[fila].Cells["colNombreArt"].Value.ToString();
+            cboEstado.Text = dgvArtesanias.Rows[fila].Cells["colEstadoArt"].Value.ToString();
+            
+            string fechaString = dgvArtesanias.Rows[fila].Cells["colFechRegArt"].Value.ToString();
+            DateTime fecha;
+            if (DateTime.TryParseExact(fechaString, "dd/MM/yyyy", CultureInfo.InvariantCulture, DateTimeStyles.None, out fecha)) {
+                dtpA.Value = fecha;
+            }
+
+            txtDescripA.Text = dgvArtesanias.Rows[fila].Cells["colDescripArt"].Value.ToString();
+            txtPVentaA.Text = dgvArtesanias.Rows[fila].Cells["colPVentaArt"].Value.ToString();
+            txtCantidadA.Text = dgvArtesanias.Rows[fila].Cells["colCantArt"].Value.ToString();
+            cboEmpleados.Text = dgvArtesanias.Rows[fila].Cells["colNombreEmp"].Value.ToString();
+            txtCodE.Text = dgvArtesanias.Rows[fila].Cells["colCodEmp"].Value.ToString();
         }
 
         private void button1_Click(object sender, EventArgs e)
