@@ -24,7 +24,7 @@ namespace RegistroArtesania_IRS
                 MessageBox.Show("Por favor, ingresa usuario y/o contraseña.");
                 return;
             }
-            if (txtUsuarioL.Text == "A001" && txtContraseñaL.Text == "1234")
+            if (txtUsuarioL.Text == "admin" && txtContraseñaL.Text == "admin")
             {
                 // Si las credenciales son correctas, abre el formulario deseado
                 FrmRegistrarArtesania formulario = new FrmRegistrarArtesania();

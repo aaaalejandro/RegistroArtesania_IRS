@@ -89,3 +89,4 @@ C:\Users\alejandro\Desktop\ingrec_01\RegistroArtesania_IRS\obj\Debug\RegistroArt
 C:\Users\alejandro\Desktop\ingrec_01\RegistroArtesania_IRS\obj\Debug\RegistroArtesania_IRS.exe
 C:\Users\alejandro\Desktop\ingrec_01\RegistroArtesania_IRS\obj\Debug\RegistroArtesania_IRS.pdb
 C:\Users\alejandro\Desktop\ingrec_01\RegistroArtesania_IRS\obj\Debug\RegistroArtesania_IRS.frmLogin.resources
+E:\Clases Idat\Tercer CIclo\Ingeniería de Requerimiento de Software\Sofware-Registrar_Artesania\RegistroArtesania_IRS\RegistroArtesania_IRS\obj\Debug\RegistroArtesania_IRS.frmLogin.resources
