@@ -16,7 +16,7 @@ namespace RegistroArtesania_IRS
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FrmRegistrarArtesania());
+            Application.Run(new frmLogin());
         }
     }
 }
