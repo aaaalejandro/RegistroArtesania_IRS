@@ -16,11 +16,13 @@ namespace RegistroArtesania_IRS
     {
         public FrmRegistrarArtesania()
         {
+
+
             InitializeComponent();
             AgregarEmpleados();
         }
 
-        SqlConnection Con = new SqlConnection("User Id=sa;Password=12345;Initial Catalog=IRS1;Data Source=(local);");
+        SqlConnection Con = new SqlConnection("User Id=sa;Password=1234;Initial Catalog=IRS1;Data Source=(local);");
 
         objRegistrarArtesania.clsArtesania Art = new objRegistrarArtesania.clsArtesania();
 

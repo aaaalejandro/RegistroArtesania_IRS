@@ -4,3 +4,9 @@ E:\Clases Idat\Tercer CIclo\Ingeniería de Requerimiento de Software\Sofware-Reg
 E:\Clases Idat\Tercer CIclo\Ingeniería de Requerimiento de Software\Sofware-Registrar_Artesania\RegistroArtesania_IRS\objRegistrarArtesania\obj\Debug\objRegistrarArtesania.csproj.CoreCompileInputs.cache
 E:\Clases Idat\Tercer CIclo\Ingeniería de Requerimiento de Software\Sofware-Registrar_Artesania\RegistroArtesania_IRS\objRegistrarArtesania\obj\Debug\objRegistrarArtesania.dll
 E:\Clases Idat\Tercer CIclo\Ingeniería de Requerimiento de Software\Sofware-Registrar_Artesania\RegistroArtesania_IRS\objRegistrarArtesania\obj\Debug\objRegistrarArtesania.pdb
+C:\Users\alejandro\Desktop\ing_rec01\objRegistrarArtesania\bin\Debug\objRegistrarArtesania.dll
+C:\Users\alejandro\Desktop\ing_rec01\objRegistrarArtesania\bin\Debug\objRegistrarArtesania.pdb
+C:\Users\alejandro\Desktop\ing_rec01\objRegistrarArtesania\obj\Debug\objRegistrarArtesania.csproj.AssemblyReference.cache
+C:\Users\alejandro\Desktop\ing_rec01\objRegistrarArtesania\obj\Debug\objRegistrarArtesania.csproj.CoreCompileInputs.cache
+C:\Users\alejandro\Desktop\ing_rec01\objRegistrarArtesania\obj\Debug\objRegistrarArtesania.dll
+C:\Users\alejandro\Desktop\ing_rec01\objRegistrarArtesania\obj\Debug\objRegistrarArtesania.pdb
