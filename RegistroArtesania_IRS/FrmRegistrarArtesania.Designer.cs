@@ -28,10 +28,10 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle11 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle12 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -66,8 +66,9 @@
             this.btnCancelarR = new System.Windows.Forms.Button();
             this.btnSalir = new System.Windows.Forms.Button();
             this.cboEmpleados = new System.Windows.Forms.ComboBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnEliminar = new System.Windows.Forms.Button();
             this.cboEstado = new System.Windows.Forms.ComboBox();
+            this.btnEditar = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.dgvArtesanias)).BeginInit();
             this.SuspendLayout();
             // 
@@ -275,17 +276,17 @@
             // 
             this.dgvArtesanias.AllowDrop = true;
             this.dgvArtesanias.AllowUserToAddRows = false;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            this.dgvArtesanias.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle9.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            this.dgvArtesanias.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
             this.dgvArtesanias.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Arial", 10F);
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvArtesanias.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle10.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle10.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Arial", 10F);
+            dataGridViewCellStyle10.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle10.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle10.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle10.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvArtesanias.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle10;
             this.dgvArtesanias.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dgvArtesanias.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.colCodArt,
@@ -298,25 +299,25 @@
             this.colEstadoP,
             this.colCodEmp,
             this.colNombreEmp});
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle3.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Arial", 10F);
-            dataGridViewCellStyle3.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvArtesanias.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle11.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle11.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle11.Font = new System.Drawing.Font("Arial", 10F);
+            dataGridViewCellStyle11.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle11.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle11.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle11.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvArtesanias.DefaultCellStyle = dataGridViewCellStyle11;
             this.dgvArtesanias.Location = new System.Drawing.Point(30, 237);
             this.dgvArtesanias.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.dgvArtesanias.Name = "dgvArtesanias";
-            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Arial", 10F);
-            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvArtesanias.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle12.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle12.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle12.Font = new System.Drawing.Font("Arial", 10F);
+            dataGridViewCellStyle12.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle12.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle12.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle12.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvArtesanias.RowHeadersDefaultCellStyle = dataGridViewCellStyle12;
             this.dgvArtesanias.RowHeadersVisible = false;
             this.dgvArtesanias.Size = new System.Drawing.Size(816, 241);
             this.dgvArtesanias.TabIndex = 22;
@@ -394,7 +395,7 @@
             this.btnRegistrar.BackColor = System.Drawing.Color.Firebrick;
             this.btnRegistrar.Font = new System.Drawing.Font("Arial", 12.5F, System.Drawing.FontStyle.Bold);
             this.btnRegistrar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnRegistrar.Location = new System.Drawing.Point(606, 130);
+            this.btnRegistrar.Location = new System.Drawing.Point(478, 136);
             this.btnRegistrar.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnRegistrar.Name = "btnRegistrar";
             this.btnRegistrar.Size = new System.Drawing.Size(113, 36);
@@ -408,12 +409,12 @@
             this.btnCancelarR.BackColor = System.Drawing.Color.Firebrick;
             this.btnCancelarR.Font = new System.Drawing.Font("Arial", 12.5F, System.Drawing.FontStyle.Bold);
             this.btnCancelarR.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnCancelarR.Location = new System.Drawing.Point(733, 187);
+            this.btnCancelarR.Location = new System.Drawing.Point(478, 181);
             this.btnCancelarR.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnCancelarR.Name = "btnCancelarR";
-            this.btnCancelarR.Size = new System.Drawing.Size(113, 36);
+            this.btnCancelarR.Size = new System.Drawing.Size(239, 36);
             this.btnCancelarR.TabIndex = 24;
-            this.btnCancelarR.Text = "Cancelar";
+            this.btnCancelarR.Text = "Eliminar Lista";
             this.btnCancelarR.UseVisualStyleBackColor = false;
             this.btnCancelarR.Click += new System.EventHandler(this.btnCancelarR_Click);
             // 
@@ -422,7 +423,7 @@
             this.btnSalir.BackColor = System.Drawing.Color.Firebrick;
             this.btnSalir.Font = new System.Drawing.Font("Arial", 12.5F, System.Drawing.FontStyle.Bold);
             this.btnSalir.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btnSalir.Location = new System.Drawing.Point(606, 187);
+            this.btnSalir.Location = new System.Drawing.Point(731, 181);
             this.btnSalir.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
             this.btnSalir.Name = "btnSalir";
             this.btnSalir.Size = new System.Drawing.Size(113, 36);
@@ -441,19 +442,19 @@
             this.cboEmpleados.TabIndex = 26;
             this.cboEmpleados.SelectedIndexChanged += new System.EventHandler(this.cboEmpleados_SelectedIndexChanged);
             // 
-            // button1
+            // btnEliminar
             // 
-            this.button1.BackColor = System.Drawing.Color.Firebrick;
-            this.button1.Font = new System.Drawing.Font("Arial", 12.5F, System.Drawing.FontStyle.Bold);
-            this.button1.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.button1.Location = new System.Drawing.Point(733, 130);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(113, 36);
-            this.button1.TabIndex = 27;
-            this.button1.Text = "Eliminar";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnEliminar.BackColor = System.Drawing.Color.Firebrick;
+            this.btnEliminar.Font = new System.Drawing.Font("Arial", 12.5F, System.Drawing.FontStyle.Bold);
+            this.btnEliminar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnEliminar.Location = new System.Drawing.Point(731, 136);
+            this.btnEliminar.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(113, 36);
+            this.btnEliminar.TabIndex = 27;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new System.EventHandler(this.button1_Click);
             // 
             // cboEstado
             // 
@@ -467,13 +468,27 @@
             this.cboEstado.Size = new System.Drawing.Size(95, 24);
             this.cboEstado.TabIndex = 28;
             // 
+            // btnEditar
+            // 
+            this.btnEditar.BackColor = System.Drawing.Color.Firebrick;
+            this.btnEditar.Font = new System.Drawing.Font("Arial", 12.5F, System.Drawing.FontStyle.Bold);
+            this.btnEditar.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btnEditar.Location = new System.Drawing.Point(604, 136);
+            this.btnEditar.Margin = new System.Windows.Forms.Padding(2, 3, 2, 3);
+            this.btnEditar.Name = "btnEditar";
+            this.btnEditar.Size = new System.Drawing.Size(113, 36);
+            this.btnEditar.TabIndex = 29;
+            this.btnEditar.Text = "Editar";
+            this.btnEditar.UseVisualStyleBackColor = false;
+            // 
             // FrmRegistrarArtesania
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(884, 511);
+            this.Controls.Add(this.btnEditar);
             this.Controls.Add(this.cboEstado);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnEliminar);
             this.Controls.Add(this.cboEmpleados);
             this.Controls.Add(this.btnSalir);
             this.Controls.Add(this.btnCancelarR);
@@ -537,7 +552,7 @@
         private System.Windows.Forms.Button btnCancelarR;
         private System.Windows.Forms.Button btnSalir;
         private System.Windows.Forms.ComboBox cboEmpleados;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.ComboBox cboEstado;
         private System.Windows.Forms.DataGridViewTextBoxColumn colCodArt;
         private System.Windows.Forms.DataGridViewTextBoxColumn colNombreArt;
@@ -549,6 +564,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn colEstadoP;
         private System.Windows.Forms.DataGridViewTextBoxColumn colCodEmp;
         private System.Windows.Forms.DataGridViewTextBoxColumn colNombreEmp;
+        private System.Windows.Forms.Button btnEditar;
     }
 }
 
