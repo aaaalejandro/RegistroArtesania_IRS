@@ -50,3 +50,42 @@ E:\Clases Idat\Tercer CIclo\Ingeniería de Requerimiento de Software\Sofware-Reg
 E:\Clases Idat\Tercer CIclo\Ingeniería de Requerimiento de Software\Sofware-Registrar_Artesania\RegistroArtesania_IRS\RegistroArtesania_IRS\bin\Debug\System.Text.Json.xml
 E:\Clases Idat\Tercer CIclo\Ingeniería de Requerimiento de Software\Sofware-Registrar_Artesania\RegistroArtesania_IRS\RegistroArtesania_IRS\bin\Debug\System.Threading.Tasks.Extensions.xml
 E:\Clases Idat\Tercer CIclo\Ingeniería de Requerimiento de Software\Sofware-Registrar_Artesania\RegistroArtesania_IRS\RegistroArtesania_IRS\bin\Debug\System.ValueTuple.xml
+C:\Users\alejandro\Desktop\ingrec_01\RegistroArtesania_IRS\bin\Debug\RegistroArtesania_IRS.exe.config
+C:\Users\alejandro\Desktop\ingrec_01\RegistroArtesania_IRS\bin\Debug\RegistroArtesania_IRS.exe
+C:\Users\alejandro\Desktop\ingrec_01\RegistroArtesania_IRS\bin\Debug\RegistroArtesania_IRS.pdb
+C:\Users\alejandro\Desktop\ingrec_01\RegistroArtesania_IRS\bin\Debug\EntityFramework.dll
+C:\Users\alejandro\Desktop\ingrec_01\RegistroArtesania_IRS\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\alejandro\Desktop\ingrec_01\RegistroArtesania_IRS\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\alejandro\Desktop\ingrec_01\RegistroArtesania_IRS\bin\Debug\objRegistrarArtesania.dll
+C:\Users\alejandro\Desktop\ingrec_01\RegistroArtesania_IRS\bin\Debug\Oracle.ManagedDataAccess.dll
+C:\Users\alejandro\Desktop\ingrec_01\RegistroArtesania_IRS\bin\Debug\Oracle.ManagedDataAccess.EntityFramework.dll
+C:\Users\alejandro\Desktop\ingrec_01\RegistroArtesania_IRS\bin\Debug\System.Buffers.dll
+C:\Users\alejandro\Desktop\ingrec_01\RegistroArtesania_IRS\bin\Debug\System.Memory.dll
+C:\Users\alejandro\Desktop\ingrec_01\RegistroArtesania_IRS\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\alejandro\Desktop\ingrec_01\RegistroArtesania_IRS\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\alejandro\Desktop\ingrec_01\RegistroArtesania_IRS\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\alejandro\Desktop\ingrec_01\RegistroArtesania_IRS\bin\Debug\System.Text.Json.dll
+C:\Users\alejandro\Desktop\ingrec_01\RegistroArtesania_IRS\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\alejandro\Desktop\ingrec_01\RegistroArtesania_IRS\bin\Debug\System.ValueTuple.dll
+C:\Users\alejandro\Desktop\ingrec_01\RegistroArtesania_IRS\bin\Debug\EntityFramework.xml
+C:\Users\alejandro\Desktop\ingrec_01\RegistroArtesania_IRS\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\alejandro\Desktop\ingrec_01\RegistroArtesania_IRS\bin\Debug\Microsoft.Bcl.AsyncInterfaces.xml
+C:\Users\alejandro\Desktop\ingrec_01\RegistroArtesania_IRS\bin\Debug\objRegistrarArtesania.pdb
+C:\Users\alejandro\Desktop\ingrec_01\RegistroArtesania_IRS\bin\Debug\System.Buffers.xml
+C:\Users\alejandro\Desktop\ingrec_01\RegistroArtesania_IRS\bin\Debug\System.Memory.xml
+C:\Users\alejandro\Desktop\ingrec_01\RegistroArtesania_IRS\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\alejandro\Desktop\ingrec_01\RegistroArtesania_IRS\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\alejandro\Desktop\ingrec_01\RegistroArtesania_IRS\bin\Debug\System.Text.Encodings.Web.xml
+C:\Users\alejandro\Desktop\ingrec_01\RegistroArtesania_IRS\bin\Debug\System.Text.Json.xml
+C:\Users\alejandro\Desktop\ingrec_01\RegistroArtesania_IRS\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\alejandro\Desktop\ingrec_01\RegistroArtesania_IRS\bin\Debug\System.ValueTuple.xml
+C:\Users\alejandro\Desktop\ingrec_01\RegistroArtesania_IRS\obj\Debug\RegistroArtesania_IRS.csproj.AssemblyReference.cache
+C:\Users\alejandro\Desktop\ingrec_01\RegistroArtesania_IRS\obj\Debug\RegistroArtesania_IRS.csproj.SuggestedBindingRedirects.cache
+C:\Users\alejandro\Desktop\ingrec_01\RegistroArtesania_IRS\obj\Debug\RegistroArtesania_IRS.FrmRegistrarArtesania.resources
+C:\Users\alejandro\Desktop\ingrec_01\RegistroArtesania_IRS\obj\Debug\RegistroArtesania_IRS.Properties.Resources.resources
+C:\Users\alejandro\Desktop\ingrec_01\RegistroArtesania_IRS\obj\Debug\RegistroArtesania_IRS.csproj.GenerateResource.cache
+C:\Users\alejandro\Desktop\ingrec_01\RegistroArtesania_IRS\obj\Debug\RegistroArtesania_IRS.csproj.CoreCompileInputs.cache
+C:\Users\alejandro\Desktop\ingrec_01\RegistroArtesania_IRS\obj\Debug\RegistroArtesania_IRS.csproj.CopyComplete
+C:\Users\alejandro\Desktop\ingrec_01\RegistroArtesania_IRS\obj\Debug\RegistroArtesania_IRS.exe
+C:\Users\alejandro\Desktop\ingrec_01\RegistroArtesania_IRS\obj\Debug\RegistroArtesania_IRS.pdb
+C:\Users\alejandro\Desktop\ingrec_01\RegistroArtesania_IRS\obj\Debug\RegistroArtesania_IRS.frmLogin.resources
