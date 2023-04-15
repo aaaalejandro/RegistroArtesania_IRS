@@ -168,6 +168,30 @@ namespace objRegistrarArtesania
                 return "0";
             }
         }
+        public String ModificaArtesania(SqlConnection CadenaSQL)
+        {
+            SqlDataAdapter dap = new SqlDataAdapter("sp_ModificaArtesania", CadenaSQL);
+            dap.SelectCommand.CommandType = CommandType.StoredProcedure;
+            dap.SelectCommand.Parameters.AddWithValue("@codArt", _codArt);
+            dap.SelectCommand.Parameters.AddWithValue("@nombreArt", _nombreArt);
+            dap.SelectCommand.Parameters.AddWithValue("@estadoArt", _estadoArt);
+            dap.SelectCommand.Parameters.AddWithValue("@fechRegis", _fechRegis);
+            dap.SelectCommand.Parameters.AddWithValue("@descripArt", _descripArt);
+            dap.SelectCommand.Parameters.AddWithValue("@precioArt", _precioArt);
+            dap.SelectCommand.Parameters.AddWithValue("@cantidadArt", _cantidadArt);
+            dap.SelectCommand.Parameters.AddWithValue("@CodEmp", _codEmp);
+            dap.SelectCommand.Parameters.AddWithValue("@nombreEmp", _nombreEmp);
+
+            if (CadenaSQL.State == ConnectionState.Closed) {
+                CadenaSQL.Open();
+            }
+            try { 
+                dap.SelectCommand.ExecuteNonQuery();
+                return "1";
+            } catch { 
+                return "0";
+            }
+        }
         public String EliminaArtesania(SqlConnection CadenaSQL)
         {
             SqlDataAdapter dap = new SqlDataAdapter("sp_EliminaArtesania", CadenaSQL);

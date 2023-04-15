@@ -121,22 +121,56 @@ namespace RegistroArtesania_IRS
                 dgvArtesanias.DataSource = Art.ListaArtesania(Con);
             }
         }
+
+        private void btnEditar_Click(object sender, EventArgs e)
+        {
+            Art.Nombre = txtNombreA.Text;
+            Art.FechaRegistro = dtpA.Value;
+            Art.Descripcion = txtDescripA.Text;
+            if (cboEstado.SelectedItem != null)
+                Art.Estado = cboEstado.SelectedItem.ToString();
+            Art.FechaRegistro = dtpA.Value;
+            Art.Descripcion = txtDescripA.Text;
+            Art.Precio = txtPVentaA.Text;
+            Art.Cantidad = txtCantidadA.Text;
+            Art.CodigoEmp = txtCodE.Text;
+            Art.Codigo = txtCodA.Text;
+
+            if (Art.ModificaArtesania(Con) != "0") {
+
+                dgvArtesanias.DataSource = Art.ListaArtesania(Con);
+            }
+
+            Limpiar();
+        }
+
         // Validadciones
         private void validaciones()
         {
-            if (String.IsNullOrEmpty(txtNombreA.Text)) {
+            if (String.IsNullOrEmpty(txtNombreA.Text))
+            {
                 MessageBox.Show("No has ingresado el nombre, vuelve a ingresar");
-            } else if (String.IsNullOrEmpty(txtDescripA.Text)) {
+            }
+            else if (String.IsNullOrEmpty(txtDescripA.Text))
+            {
                 MessageBox.Show("No has ingresado la descripcion, vuelve a ingresar");
-            } else if (String.IsNullOrEmpty(txtPVentaA.Text)) {
+            }
+            else if (String.IsNullOrEmpty(txtPVentaA.Text))
+            {
                 MessageBox.Show("No has ingresado el precio de venta, vuelve a ingresar");
-            } else if (String.IsNullOrEmpty(txtCantidadA.Text)) {
+            }
+            else if (String.IsNullOrEmpty(txtCantidadA.Text))
+            {
                 MessageBox.Show("No has ingresado la cantidad, vuelve a ingresar");
-            } else if (cboEstado.SelectedIndex == -1) {
+            }
+            else if (cboEstado.SelectedIndex == -1)
+            {
                 MessageBox.Show("No has seleccionado el estado");
-            } else if (cboEmpleados.SelectedIndex == -1) {
+            }
+            else if (cboEmpleados.SelectedIndex == -1)
+            {
                 MessageBox.Show("No has seleccionado el nombre del empleado");
-            } 
+            }
         }
 
         private void Limpiar()
@@ -154,18 +188,19 @@ namespace RegistroArtesania_IRS
 
         private void txtPVentaA_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar)) {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
                 e.Handled = true;
             }
         }
 
         private void txtCantidadA_KeyPress(object sender, KeyPressEventArgs e)
         {
-            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar)) {
+            if (!char.IsControl(e.KeyChar) && !char.IsDigit(e.KeyChar))
+            {
                 e.Handled = true;
             }
         }
-
 
         /*
         private void CargarCabecera()
