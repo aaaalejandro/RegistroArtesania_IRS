@@ -18,6 +18,7 @@ namespace RegistroArtesania_IRS
         {
 
 
+
             InitializeComponent();
             AgregarEmpleados();
         }
@@ -28,6 +29,7 @@ namespace RegistroArtesania_IRS
 
         public void AgregarEmpleados()
         {
+
             SqlCommand command = new SqlCommand("SELECT nombreEmp FROM Empleado", Con);
             Con.Open();
             SqlDataReader reader = command.ExecuteReader();
