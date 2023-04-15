@@ -38,10 +38,12 @@ namespace RegistroArtesania_IRS
         }
 
         // Cerrar el programa
+
         private void button2_Click(object sender, EventArgs e)
         {
             Application.Exit();
         }
+
         // Mostrar el Id de un Empleado seleccionado
         private void cboEmpleados_SelectedIndexChanged(object sender, EventArgs e)
         {
@@ -51,6 +53,7 @@ namespace RegistroArtesania_IRS
                 txtCodE.Text = codigo;
             }
         }
+
         private String ObtenerDatos(String nombreEmp)
         {
             SqlCommand command = new SqlCommand("SELECT CodEmp FROM Empleado WHERE nombreEmp = @nombreEmp", Con);
@@ -60,12 +63,14 @@ namespace RegistroArtesania_IRS
             Con.Close();
             return codigo;
         }
+
         // Hacer la carga
         private void FrmRegistrarArtesania_Load(object sender, EventArgs e)
         {
             dgvArtesanias.DataSource = Art.ListaArtesania(Con);
         }
 
+        // Hacer el funcionamiento de los Botones
         private void btnRegistrar_Click(object sender, EventArgs e)
         {
             validaciones();
@@ -90,7 +95,6 @@ namespace RegistroArtesania_IRS
 
             Limpiar();
         }
-
 
         private void dgvArtesanias_CellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -129,23 +133,30 @@ namespace RegistroArtesania_IRS
 
         private void btnEditar_Click(object sender, EventArgs e)
         {
-            Art.Nombre = txtNombreA.Text;
-            Art.FechaRegistro = dtpA.Value;
-            Art.Descripcion = txtDescripA.Text;
-            if (cboEstado.SelectedItem != null)
+            try {
+                Art.Codigo = txtCodA.Text;
+                Art.Nombre = txtNombreA.Text;
+                Art.Descripcion = txtDescripA.Text;
                 Art.Estado = cboEstado.SelectedItem.ToString();
-            Art.FechaRegistro = dtpA.Value;
-            Art.Descripcion = txtDescripA.Text;
-            Art.Precio = txtPVentaA.Text;
-            Art.Cantidad = txtCantidadA.Text;
-            Art.CodigoEmp = txtCodE.Text;
-            Art.Codigo = txtCodA.Text;
+                Art.FechaRegistro = dtpA.Value;
+                Art.Precio = txtPVentaA.Text;
+                Art.Cantidad = txtCantidadA.Text;
+                Art.CodigoEmp = txtCodE.Text;
+                Art.NombreEmp = cboEmpleados.SelectedItem.ToString();
 
-            if (Art.ModificaArtesania(Con) != "0") {
+                if (Art.ModificaArtesania(Con) != "0")
+                {
+                    dgvArtesanias.DataSource = Art.ListaArtesania(Con);
+                }
 
-                dgvArtesanias.DataSource = Art.ListaArtesania(Con);
+                Limpiar();
+            } catch (Exception ex) {
+                MessageBox.Show("Error al editar la artesanía: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+        }
 
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
             Limpiar();
         }
 
@@ -205,11 +216,6 @@ namespace RegistroArtesania_IRS
             {
                 e.Handled = true;
             }
-        }
-
-        private void btnLimpiar_Click(object sender, EventArgs e)
-        {
-            Limpiar();
         }
     }
 }
